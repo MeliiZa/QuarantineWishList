@@ -1,10 +1,11 @@
 body{
     
     background-image: radial-gradient( circle 827px at 47.3% 48%,  rgba(255,255,255,1) 0%, rgba(138,192,216,1) 90% );
+    
 }
 
 .App{
-    padding-top: 10%;
+    padding-top: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +13,7 @@ body{
 }
 
 .title{
+    font-family: 'Abril Fatface', cursive;
     text-align: center;
     font-size: 100px;
 }
