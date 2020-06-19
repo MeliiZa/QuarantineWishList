@@ -58,12 +58,12 @@ class App extends Component {
                 <div className="title">
                     Quarantine Wishlist
                 </div>
-                <div className="description"> A list of all the things I am hoping to do when the quarantine is over.</div>
+                <div className="description"> Set reminders for everything you want to do when quarantine is over. </div>
 
                 <div className ="form-inline ">
                     <div className="form-input">
                         <input className ="form-control"
-                        placeholder="I  have to..."
+                        placeholder="I want to..."
                         onChange={event => this.setState({text: event.target.value})}/>
                     <input 
                         className='form-control'
@@ -77,8 +77,7 @@ class App extends Component {
                     className="btn btn-success"
                     onClick={()=> this.addReminder()}
                     >
-
-                        Add Reminder
+                    Add Reminder
                     </button>
                 </div>
                 {this.renderReminders()}
