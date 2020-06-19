@@ -17,6 +17,7 @@ class App extends Component {
     addReminder(){
         console.log(this.state.dueDate)
         this.props.addReminder(this.state.text, this.state.dueDate);
+        this.setState({text: '', dueDate: ''});
     }
     
     deleteReminder(id){
@@ -64,6 +65,7 @@ class App extends Component {
                     <div className="form-input">
                         <input className ="form-control"
                         placeholder="I want to..."
+                        value={this.state.text}
                         onChange={event => this.setState({text: event.target.value})}/>
                     <input 
                         className='form-control'
